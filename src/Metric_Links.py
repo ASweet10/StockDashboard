@@ -1,0 +1,7 @@
+eps_Link = "https://www.youtube.com/watch?v=e1ovoNO7LMc"
+marketcap_Link = "https://www.youtube.com/watch?v=dPq-jhj1ARE"
+peRatio_Link = "https://www.youtube.com/watch?v=4KkTGx2bK_4"
+divYield_Link = "https://www.youtube.com/watch?v=BsZ3RUSDL8k"
+peGRatio_Link = "https://www.youtube.com/watch?v=-cVkFyC4g4M"
+priceToBook_Link = "https://www.youtube.com/watch?v=VFYhdFhav2c"
+beta_Link = "https://www.youtube.com/watch?v=0QX1EHV2Ml8"
