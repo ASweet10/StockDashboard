@@ -140,7 +140,8 @@ def return_dashboard(n_clicks, time_value, ticker):
     overview_json = overview_response.json()
 
     stock_name = str(overview_json.get('Name'))
-    stock_market_cap = int(overview_json.get('MarketCapitalization'))
+    stock_market_cap = overview_json.get('MarketCapitalization')
+    stock_market_cap = int(stock_market_cap)
     stock_market_cap = '${:,}'.format(stock_market_cap)
     stock_eps = overview_json.get('EPS')
     stock_pe_ratio = overview_json.get('PERatio')
