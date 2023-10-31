@@ -150,9 +150,14 @@ def return_dashboard(n_clicks, time_value, ticker):
     stock_eps = overview_json.get('EPS')
     stock_pe_ratio = overview_json.get('PERatio')
     stock_peg_ratio = overview_json.get('PEGRatio')
-    stock_div_yield = float(overview_json.get('DividendYield'))
+    stock_div_yield = overview_json.get('DividendYield')
+    if stock_div_yield is None:
+        stock_div_yield = 1
+    stock_div_yield = float(stock_div_yield)
     stock_div_yield = '{:.1%}'.format(stock_div_yield)
     stock_ebitda = overview_json.get('EBITDA')
+    if stock_ebitda is None:
+        stock_ebitda = 1
     stock_ebitda = int(stock_ebitda)
     stock_ebitda = '${:,}'.format(stock_ebitda)
     stock_priceBookRatio = overview_json.get('PriceToBookRatio')
