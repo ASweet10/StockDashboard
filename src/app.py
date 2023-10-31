@@ -18,7 +18,7 @@ from dateutil.relativedelta import relativedelta
 import dash_loading_spinners as dls
 
 import finnhub
-from newsapi import NewsApiClient
+from newsapi.newsapi_client import NewsApiClient
 
 from Dashboard_Layout import *
 from BasicInfo_Layout import *
