@@ -141,6 +141,8 @@ def return_dashboard(n_clicks, time_value, ticker):
 
     stock_name = str(overview_json.get('Name'))
     stock_market_cap = overview_json.get('MarketCapitalization')
+    if type(stock_market_cap) == None:
+        stock_market_cap = '1'
     #print(type(stock_market_cap))
     stock_market_cap = int(stock_market_cap)
     #print(type(stock_market_cap))
