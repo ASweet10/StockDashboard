@@ -30,7 +30,7 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])
 app.config.suppress_callback_exceptions = True
 server = app.server # For DashTools render
 
-ALPHA_KEY = os.getenv('ALPHA_VANTAGE_KEY')
+ALPHA_KEY = str(os.getenv('ALPHA_VANTAGE_KEY'))
 NEWS_KEY = os.getenv('NEWS_API_KEY')
 FINNHUB_KEY = os.getenv('FINNHUB_API_KEY')
 api_url = "https://www.alphavantage.co/query?function="
